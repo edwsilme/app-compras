@@ -1,0 +1,7 @@
+<div>
+
+    <!-- llama a total/total.component-->
+    <app-total mensaje="total a pagar: " [total]="total"></app-total>
+
+    <app-item *ngFor="let item of items" [item]="item" (deleteItem)="deleteItem($event)" (toggleItem)="toggleItem($event)"></app-item>
+</div>
